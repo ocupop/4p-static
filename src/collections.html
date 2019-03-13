@@ -1,0 +1,42 @@
+---
+layout: default
+title: Shop Collections
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <h1>Collections</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam harum dicta, laudantium assumenda deserunt inventore porro ipsum! Fugiat, eaque!</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam harum dicta, laudantium assumenda deserunt
+            inventore porro ipsum! Fugiat, eaque!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row no-gutters">
+      {% for i in (1..4) %}
+      <div class="col-lg-6">
+        <div class="content">
+          {% include collection-card.html %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

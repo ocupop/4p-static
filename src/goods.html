@@ -1,0 +1,18 @@
+---
+layout: default
+title: Browse Goods
+---
+{% include browse-goods-nav.html %}
+<section>
+  <div class="container">
+    <div class="row no-gutters">
+      {% for i in (1..12) %}
+      <div class="col-lg-3">
+        <div class="content">
+          {% include product-card.html %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

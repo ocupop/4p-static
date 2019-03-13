@@ -1,0 +1,95 @@
+---
+layout: default
+title: Product Template
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="content">
+          <h1>Product Title</h1>
+          <p>product description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, placeat!</p>
+          <span>$5.55</span>
+          <span>1/2 Dozen</span>
+          <div class="d-flex align-items-center">
+            <button class="w-50">
+              Weekly<br>
+              Delivery
+            </button>
+            <button class="w-50">
+              One-Time<br>
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="content">
+          <h2>Product Details</h2>
+          <div class="d-flex">
+            <span class="bg-light">Certified Organic</span>
+            <span class="bg-light">Local</span>
+            <span class="bg-light">Seasonal</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <h2>Ingredients:</h2>
+          <span>Eggs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="content">
+          <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <h2>From Whiffletree Farms</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea laborum sequi maxime amet aperiam deleniti accusamus molestias fuga illo.</p>
+          <div class="d-flex">
+            <span>30 Miles from you</span>
+            <a href="#">whiffletreefarms.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include we-recommend.html %}

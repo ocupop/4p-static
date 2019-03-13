@@ -1,0 +1,118 @@
+---
+layout: default
+title: Cart Template
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <div class="d-flex align-items-center justify-content-between">
+            <h1 class="d-inline-block">Your cart</h1>
+            <div class="delivery-details d-flex align-items-center">
+              <span>Your next delivery
+                <strong>Wednesday 12/19</strong>
+              </span>
+              <a href="#">
+                <small>Edit Delivery<br>Schedule</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="content">
+          <h2>Your Weekly Delivery</h2>
+          <p>Delivery copy Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quos?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    {% for i in (1..2) %}
+      {% include item-row.html %}
+    {% endfor %}
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="content">
+          <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/500x400)"></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <h2>Collection Title</h2>
+          <select name="" id="">
+            <option value="">Size</option>
+          </select>
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="content">
+          <div class="d-flex">
+            <select name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+            <span>$0.00</span>
+          </div>
+          <input type="radio" name="delivery-{{ forloop.index }}" value="weekly" checked>Weekly Delivery Item<br>
+          <input type="radio" name="delivery-{{ forloop.index }}" value="one-time">One-Time Purchase<br>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 ml-lg-auto">
+        {% for i in (1..4) %}
+          {% include this-week-item.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="content">
+          <h2>Your One-Time Purchases</h2>
+          <p>Delivery copy Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quos?</p>
+        </div>
+      </div>
+    </div>
+    {% for i in (1..2) %}
+      {% include item-row.html %}
+    {% endfor %}
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 ml-lg-auto">
+        <div class="content">
+          <div class="form-group row align-items-center">
+            <label for="input-coupon-code" class="col-sm-2 col-form-label">Coupon Code</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="input-coupon-code">
+            </div>
+          </div>
+          <dl class="d-flex flex-wrap text-right">
+            <dt class="w-75">Subtotal</dt>
+            <dd class="w-25">$0.00</dd>
+            <dt class="w-75">Delivery Fee</dt>
+            <dd class="w-25">Free</dd>
+            <dt class="w-75">Total</dt>
+            <dd class="w-25">$0.00</dd>
+          </dl>
+          <a href="#" class="btn btn-primary btn-block">Check out for Wednesday 12/19</a>
+          <p>You have until <span class="text-primary">Sunday 12/9 by midnight</span> to edit your order</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

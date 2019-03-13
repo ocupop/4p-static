@@ -1,0 +1,39 @@
+---
+layout: default
+title: Ordered Template
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <h1>Order Delivered on 12/14</h1>
+          <hr>
+        </div>
+      </div>
+    </div>
+    {% for i in (1..6) %}
+      {% include delivered-item.html %}
+    {% endfor %}
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 ml-lg-auto">
+        <div class="content">
+          <dl class="d-flex flex-wrap text-right">
+            <dt class="w-75">Subtotal</dt>
+            <dd class="w-25">$0.00</dd>
+            <dt class="w-75">Delivery Fee</dt>
+            <dd class="w-25">Free</dd>
+            <dt class="w-75">Total</dt>
+            <dd class="w-25">$0.00</dd>
+          </dl>
+          <button class="btn btn-secondary btn-block">Download Order Receipt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

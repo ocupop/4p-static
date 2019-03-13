@@ -1,15 +1,15 @@
 <header id="page-header">
   <div class="container">
-    <nav id="usernav" class="navbar navbar-expand-md">
-      <a class="navbar-brand" href="/"><img src="https://via.placeholder.com/200x50" class="img-fluid" alt="4P Foods logo"></a>
+    <nav id="mainnav" class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="/"><img src="/assets/img/logo.svg" class="img-fluid" alt="4P Foods logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-md-end" id="user-action-nav">
+      <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link{% if page.url == '/blog' %} active{% endif %}" href="/blog">Blog {% if page.url == '/blog/' %}<span class="sr-only">(current)</span>{% endif %}</a>
+            <a class="nav-link{% if page.url == '/blog' %} active{% endif %}" href="/blog">4P Blog {% if page.url == '/blog/' %}<span class="sr-only">(current)</span>{% endif %}</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="user-dropdown" role="button" data-toggle="dropdown"
@@ -24,7 +24,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link">$0.00</a>
+            <a class="nav-link cart-link">$0.00</a>
           </li>
         </ul>
       </div>
@@ -35,9 +35,7 @@
       </form> -->
     </nav>
   </div>
-  <div class="container">
-    {% include mainnav.html %}
-  </div>
+  {% include storenav.html %}
 </header>
 
 

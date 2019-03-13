@@ -1,4 +1,19 @@
 ---
 layout: homepage
-title: Project Template
+title: Home Template
 ---
+
+<section>
+  <div class="container">
+    <div class="row">
+      {% for page in site.pages %}
+        <div class="col-lg-3">
+          <div class="content">
+            <div class="bg-image aspect-1x1" style="background-image: url({{ page.thumbnail_image }})"></div>
+            <a href="{{ page.url }}">{{ page.title }}</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

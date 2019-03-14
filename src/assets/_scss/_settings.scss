@@ -1,17 +1,18 @@
 // Color Palette
 $white:    #ffffff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-200: #efebe5;
+$gray-300: #b3b3b3;
 $gray-400: #a7a9ac;
 $gray-500: #999999;
 $gray-600: #808080;
-$gray-700: #495057 !default;
+$gray-700: #666666;
 $gray-800: #4d4d4d;
 $gray-900: #212529 !default;
 $black:    #000000 !default;
 
 $blue:    #82dadb;
+$blue-mid: #71c7c7;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -29,12 +30,12 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100;
-$dark:          $gray-700;
+$light:         $gray-300;
+$dark:          $gray-800;
 
 
 $body-bg:               $white;
-$body-color:            $dark;
+$body-color:            $gray-700;
 
 
 $font-family-base: 'Montserrat', sans-serif;
@@ -58,10 +59,10 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
-$headings-font-family:        'Open Sans', sans-serif;
+$headings-font-family:        $font-family-base;
 $headings-font-weight:        400;
-$headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-line-height:        1.5rem;
+$headings-color:              $gray-600;
 
 
 $border-radius:           0;

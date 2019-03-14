@@ -9,30 +9,38 @@ thumbnail_image: /assets/img/thumbnail-collection-detail.png
     <div class="row">
       <div class="col-lg-6">
         <div class="content">
-          <h1>Produce Collection</h1>
+          <h1 class="h2">Produce Collection</h1>
           <p>Colllection Description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quis hic fuga eius vitae architecto reiciendis sit odio quibusdam ab.</p>
-          <select name="" id="">
-            <option value="" selected disabled>Choose size</option>
-            <option value=""> 1</option>
-            <option value="">Option value 2</option>
-            <option value="">Option value 3</option>
-          </select>
-          <span>$0.00 - $0.00</span>
+          <div class="styled-select">
+            <select name="" id="">
+              <option value="" selected disabled>Choose size</option>
+              <option value=""> 1</option>
+              <option value="">Option value 2</option>
+              <option value="">Option value 3</option>
+            </select>
+          </div>
+          <div class="product-price my-3">$0.00 - $0.00</div>
           <div class="d-flex">
-            <button class="w-50">
+            <button class="product-button w-50">
               Weekly<br>
               Delivery
             </button>
-            <button class="w-50">
+            <button class="product-button w-50">
               One-Time<br>
               Purchase
             </button>
           </div>
         </div>
       </div>
+      <div class="col-lg-6">
+        <div class="content">
+          <div class="bg-image aspect-4x3" style="background-image: url({{ site.placeholder_image }})"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<hr>
 <section>
   <div class="container">
     <div class="row">
@@ -57,6 +65,7 @@ thumbnail_image: /assets/img/thumbnail-collection-detail.png
     </div>
   </div>
 </section>
+<hr>
 <section>
   <div class="container">
     <div class="row">
@@ -80,18 +89,25 @@ thumbnail_image: /assets/img/thumbnail-collection-detail.png
 <section>
   <div class="container">
     <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <h2>This week's goods</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       {% for i in (1..8) %}
         <div class="col-lg-6">
           <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="content">
                 <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/500x400)"></div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8">
               <div class="content">
-                <h3>Product Name</h3>
-                <p>product size / amount</p>
+                <h3 class="h2">Product Name</h3>
+                <span class="text-uppercase text-light font-family-base">product size / amount</span>
               </div>
             </div>
           </div>
@@ -100,4 +116,5 @@ thumbnail_image: /assets/img/thumbnail-collection-detail.png
     </div>
   </div>
 </section>
+<hr>
 {% include we-recommend.html %}

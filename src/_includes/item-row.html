@@ -8,20 +8,29 @@
     <div class="content">
       <h2>Item Title</h2>
       <p>Amount</p>
-      <button>Remove</button>
+      <button class="btn btn-link">Remove</button>
     </div>
   </div>
   <div class="col-lg-3">
     <div class="content">
       <div class="d-flex">
-        <select name="" id="">
-          <option value="">1</option>
-          <option value="">2</option>
-        </select>
-        <span>$0.00</span>
+        <div class="styled-select">
+          <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+          </select>
+        </div>
+        
+        <span class="product-price">$0.00</span>
       </div>
-      <input type="radio" name="delivery-{{ forloop.index }}" value="weekly" checked>Weekly Delivery Item<br>
-      <input type="radio" name="delivery-{{ forloop.index }}" value="one-time">One-Time Purchase<br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="delivery" id="delivery-weekly" value="weekly" checked>
+        <label for="delivery-weekly">Weekly Delivery Item</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="delivery" id="delivery-one-time" value="one-time">
+        <label for="delivery-one-time">One-Time Purchase</label>
+      </div>
     </div>
   </div>
 </div>

@@ -1,14 +1,14 @@
 <div class="container">
-  <nav id="browsenav" class="navbar navbar-expand-lg">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#goodsnav" aria-controls="primarynav"
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#productnav" aria-controls="productnav"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="goodsnav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+    <div class="collapse navbar-collapse" id="productnav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
           <form class="bd-search d-flex align-items-center" action="/search" method="get">
-            <input type="search" class="form-control" id="search-query" name="q" placeholder="Search..."
+            <input type="search" class="form-control" id="search-query" name="q" placeholder="Search"
               aria-label="Search for..." autocomplete="off">
             <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse"
               data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
@@ -34,12 +34,14 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Prepared</a>
         </li>
-        <li>
-          <select name="" id="">
-            <option value="">option 1</option>
-            <option value="">option 2</option>
-            <option value="">option 3</option>
-          </select>
+        <li class="ml-auto">
+          <div class="styled-select">
+            <select name="" id="">
+              <option value="">option 1</option>
+              <option value="">option 2</option>
+              <option value="">option 3</option>
+            </select>
+          </div>
         </li>
       </ul>
     </div>

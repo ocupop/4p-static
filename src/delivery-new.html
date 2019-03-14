@@ -11,7 +11,7 @@ thumbnail_image: /assets/img/thumbnail-delivery-new.png
         <div class="content">
           <h1>Delivery Info</h1>
           <hr>
-          <form>
+          <div>
             <div class="row">
               <div class="col">
                 <input type="text" class="form-control" placeholder="Address">
@@ -25,9 +25,11 @@ thumbnail_image: /assets/img/thumbnail-delivery-new.png
                 <input type="text" class="form-control" placeholder="City">
               </div>
               <div class="col">
-                <select class="form-control">
-                  <option>State select</option>
-                </select>
+                <div class="styled-select">
+                  <select>
+                    <option>State select</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div class="row">
@@ -69,6 +71,8 @@ thumbnail_image: /assets/img/thumbnail-delivery-new.png
                   </label>
                 </div>
               </div>
+            </div>
+            <div class="row">  
               <div class="col">
                 <input type="text" class="form-control" placeholder="Concierge Number">
               </div>
@@ -88,12 +92,12 @@ thumbnail_image: /assets/img/thumbnail-delivery-new.png
             </div>
             <div class="row">
               <div class="col">
-                <textarea name="parking-options" id="" cols="30" rows="5" placeholder="Parking Options"></textarea>
+                <textarea class="form-control" name="parking-options" id="" cols="30" rows="5" placeholder="Parking Options"></textarea>
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <textarea name="special-instructions" id="" cols="30" rows="5" placeholder="Other Special Instructions"></textarea>
+                <textarea class="form-control" name="special-instructions" id="" cols="30" rows="5" placeholder="Other Special Instructions"></textarea>
               </div>
             </div>
             <div class="row">

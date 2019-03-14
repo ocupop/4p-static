@@ -10,7 +10,7 @@ thumbnail_image: /assets/img/thumbnail-cart.png
       <div class="col-12">
         <div class="content">
           <div class="cart-header">
-            <h1 class="d-inline-block">Your cart</h1>
+            <h1 class="d-lg-inline-block">Your cart</h1>
             <div class="delivery-details d-flex align-items-center">
               <span class="text-uppercase">Your next delivery
                 <strong>Wednesday 12/19</strong>
@@ -33,62 +33,31 @@ thumbnail_image: /assets/img/thumbnail-cart.png
     </div>
     {% for i in (1..2) %}
       {% include item-row.html %}
+      <hr class="row-border">
     {% endfor %}
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="content">
-          <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/500x400)"></div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="content">
-          <h2>Collection Title</h2>
-          <div class="styled-select">
-            <select name="" id="">
-              <option value="">Size</option>
-            </select>
-          </div>
-          
-          <button class="btn btn-link">Remove</button>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="content">
-          <div class="d-flex">
-            <div class="styled-select">
-              <select name="" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-              </select>
-            </div>
-            <span>$0.00</span>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="delivery" id="delivery-weekly" value="weekly"
-              checked>
-            <label for="delivery-weekly">Weekly Delivery Item</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="delivery" id="delivery-one-time"
-              value="one-time">
-            <label for="delivery-one-time">One-Time Purchase</label>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include collection-row.html %}
     <div class="row">
       <div class="col-lg-9 ml-lg-auto">
-        {% for i in (1..4) %}
+        <div class="content">
+          <h3>This week's goods 
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false"
+            aria-controls="collapse-1">
+            <span class="hide-text">Hide</span><span class="show-text">Show</span> Items
+            </button>
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-9 ml-lg-auto">
+        <div id="collapse-1" class="collapse show">
+          {% for i in (1..4) %}
           {% include this-week-item.html %}
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section>
-  <div class="container">
+    <hr class="row-border">
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12">
         <div class="content">
           <h2>Your One-Time Purchases</h2>
           <p>Delivery copy Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quos?</p>
@@ -96,12 +65,9 @@ thumbnail_image: /assets/img/thumbnail-cart.png
       </div>
     </div>
     {% for i in (1..2) %}
-      {% include item-row.html %}
+    {% include item-row.html %}
     {% endfor %}
-  </div>
-</section>
-<section>
-  <div class="container">
+    <hr class="row-border">
     <div class="row">
       <div class="col-lg-6 ml-lg-auto">
         <div class="content">

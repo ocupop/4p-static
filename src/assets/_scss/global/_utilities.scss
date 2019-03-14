@@ -77,16 +77,21 @@
     &::after {
       border-color: rgba($white, 0);
       border-left-color: #ffffff;
-      border-width: 30px;
-      margin-top: -30px;
+      border-width: 11px;
+      margin-top: -10px;
     }
     &::before {
-      border-color: rgba($gray-400, 0);
-      border-left-color: $gray-400;
-      border-width: 31px;
-      margin-top: -31px;
+      border-color: rgba($gray-800, 0);
+      border-left-color: $gray-800;
+      border-width: 11px;
+      margin-top: -10px;
     }  
   }
+}
+
+.row-border {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 // Color Utilities

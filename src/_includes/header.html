@@ -1,13 +1,16 @@
 <header id="page-header">
   <div class="container">
-    <nav id="mainnav" class="navbar navbar-expand-md">
+    <nav id="mainnav" class="navbar justify-content-between">
       <a class="navbar-brand" href="/"><img src="/assets/img/logo.svg" class="img-fluid" alt="4P Foods logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#store-primarynav"
+        aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar close-one"></span>
+        <span class="bar close-two"></span>
+        <span class="bar close-three"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
-        <ul class="navbar-nav">
+      <div id="primarynav">
+        <ul class="nav">
           <li class="nav-item">
             <a class="nav-link{% if page.url == '/blog' %} active{% endif %}" href="/blog">4P Blog {% if page.url == '/blog/' %}<span class="sr-only">(current)</span>{% endif %}</a>
           </li>
@@ -19,12 +22,12 @@
             <div class="dropdown-menu" aria-labelledby="user-dropdown">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-cart">
             <a class="nav-link cart-link">$0.00</a>
+            {% include cart-hover-summary.html %}
           </li>
         </ul>
       </div>

@@ -1,0 +1,45 @@
+---
+layout: default
+title: Delivery Schedule Template
+---
+
+<section class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <h1>Delivery Schedule</h1>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      {% for i in (1..4) %}
+        <div class="col-md-6 col-lg-3">
+          <div class="content">
+            <div class="delivery-schedule-item">
+              <div class="delivery-date">
+                12/21
+              </div>
+              <div class="delivery-schedule-footer">
+                <button>Skip</button>
+                <button>Donate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="content">
+          <p><span class="text-uppercase">Skip an order:</span> You can skip any of your scheduled deliveries, just make sure to skip before your skip deadline (12/18) for the upcoming
+          week.</p>
+          <p><span class="text-uppercase">Donate an order:</span> You can choose to donate any of your scheduled deliveries, just make sure to donate before your deadline (12/18) for the
+          upcoming week.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include delivery-new.html %}

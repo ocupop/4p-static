@@ -1,0 +1,10 @@
+.item-row {
+  .btn-link {
+    font-size: 14px;
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+}
